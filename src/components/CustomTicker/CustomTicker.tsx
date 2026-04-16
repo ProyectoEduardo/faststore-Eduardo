@@ -35,7 +35,6 @@ export default function CustomTicker({
                 }}
             >
                 <span>{text}</span>
-                <span>{text}</span>
             </div>
         </div>
     )
