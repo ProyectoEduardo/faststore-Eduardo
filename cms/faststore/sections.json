@@ -272,5 +272,50 @@
         }
       }
     }
+  },
+  {
+    "name": "CategoryGrid",
+    "schema": {
+      "title": "Grid de Categorías",
+      "description": "Bloque de categorías navegables con imagen",
+      "type": "object",
+      "properties": {
+        "columns": {
+          "title": "Columnas (desktop)",
+          "type": "number",
+          "default": 4
+        },
+        "items": {
+          "title": "Categorías",
+          "type": "array",
+          "items": {
+            "title": "Categoría",
+            "type": "object",
+            "required": [
+              "title",
+              "image",
+              "link"
+            ],
+            "properties": {
+              "title": {
+                "title": "Título",
+                "type": "string"
+              },
+              "image": {
+                "title": "Imagen",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "link": {
+                "title": "Link",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
   }
 ]
