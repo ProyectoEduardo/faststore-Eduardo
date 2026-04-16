@@ -1,9 +1,11 @@
 import React from 'react'
 import { Icon } from '@faststore/ui'
+import styles from './CustomHeader.module.scss'
 
 type LinkItem = {
   label: string
-  href: string
+  href?: string
+  children?: LinkItem[]
 }
 
 export interface CustomHeaderProps {
@@ -91,9 +93,9 @@ export default function CustomHeader({
           <span>{loginLabel}</span>
         </a>
 
-       {/* <a
-          href="/benefits"
-          style={{
+        {/* <a
+         href="/benefits"
+         style={{
             textDecoration: 'none',
             color: '#111',
             fontWeight: 500,
@@ -101,9 +103,9 @@ export default function CustomHeader({
             border: '1px solid #111',
             borderRadius: '6px',
             whiteSpace: 'nowrap',
-          }}
+         }}
         >
-          {actionLabel}
+         {actionLabel}
         </a> */}
 
         <a
@@ -116,7 +118,7 @@ export default function CustomHeader({
             color: '#111',
             fontWeight: 600,
             whiteSpace: 'nowrap',
-            flexDirection:'column'
+            flexDirection: 'column'
           }}
         >
           <span
@@ -177,28 +179,21 @@ export default function CustomHeader({
           <span>{minicartLabel}</span>
         </a>
       </div>
-
-      <nav
-        style={{
-          display: 'flex',
-          gap: '24px',
-          padding: '0 24px 16px',
-          overflowX: 'auto',
-        }}
-      >
+      <nav className={styles.menu}>
         {links.map((item) => (
-          <a
-            key={`${item.label}-${item.href}`}
-            href={item.href}
-            style={{
-              textDecoration: 'none',
-              color: '#111',
-              whiteSpace: 'nowrap',
-              fontWeight: 500,
-            }}
-          >
-            {item.label}
-          </a>
+          <div key={item.label} className={styles.menuItem}>
+            <a href={item.href}>{item.label}</a>
+
+            {item.children && (
+              <div className={styles.submenu}>
+                {item.children.map((sub) => (
+                  <a key={sub.label} href={sub.href}>
+                    {sub.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
       </nav>
     </header>
