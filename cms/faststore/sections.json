@@ -389,44 +389,6 @@
     }
   },
   {
-    "name": "Breadcrumb",
-    "schema": {
-      "title": "Breadcrumb",
-      "description": "Ruta de navegación global",
-      "type": "object",
-      "properties": {
-        "enabled": {
-          "title": "Mostrar breadcrumb",
-          "type": "boolean",
-          "default": true
-        },
-        "separator": {
-          "title": "Separador",
-          "type": "string",
-          "default": "/"
-        },
-        "items": {
-          "title": "Ruta manual",
-          "type": "array",
-          "items": {
-            "title": "Item",
-            "type": "object",
-            "properties": {
-              "label": {
-                "title": "Texto",
-                "type": "string"
-              },
-              "link": {
-                "title": "Link",
-                "type": "string"
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  {
     "name": "ProductTabs",
     "schema": {
       "title": "Product Tabs",
