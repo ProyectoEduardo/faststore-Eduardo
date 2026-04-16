@@ -1,0 +1,93 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* OVERLAY para mejorar contraste */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* CONTENIDO */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
+/* ALINEACIONES */
+.left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+}
+
+.right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+/* TITULO */
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+
+  p {
+    margin: 0;
+  }
+}
+
+/* SUBTITULO */
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+
+  p {
+    margin: 0;
+  }
+}
+
+/* BOTÓN */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff5a7a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #e14b68;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}

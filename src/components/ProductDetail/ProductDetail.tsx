@@ -13,7 +13,7 @@ export default function ProductDetail({
 }: ProductDetailProps) {
   const { data } = usePDP()
   const product = data?.product
-
+  console.log("xdddddddddd",data)
   const [selectedImage, setSelectedImage] = useState(0)
   const [quantity, setQuantity] = useState(1)
 
