@@ -317,5 +317,61 @@
         }
       }
     }
+  },
+  {
+    "name": "Newsletter",
+    "schema": {
+      "title": "Newsletter / Suscripción",
+      "description": "Bloque de captura de correos",
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Mostrar bloque",
+          "type": "boolean",
+          "default": true
+        },
+        "title": {
+          "title": "Título",
+          "type": "string",
+          "widget": {
+            "ui:widget": "draftjs-rich-text"
+          }
+        },
+        "subtitle": {
+          "title": "Subtítulo",
+          "type": "string",
+          "widget": {
+            "ui:widget": "draftjs-rich-text"
+          }
+        },
+        "backgroundColor": {
+          "title": "Color de fondo",
+          "type": "string",
+          "default": "#f5f5f5"
+        },
+        "backgroundImage": {
+          "title": "Imagen de fondo",
+          "type": "string",
+          "widget": {
+            "ui:widget": "image-uploader"
+          }
+        },
+        "buttonText": {
+          "title": "Texto del botón",
+          "type": "string",
+          "default": "Suscribirme"
+        },
+        "successMessage": {
+          "title": "Mensaje de éxito",
+          "type": "string",
+          "default": "¡Gracias por suscribirte!"
+        },
+        "errorMessage": {
+          "title": "Mensaje de error",
+          "type": "string",
+          "default": "Correo inválido"
+        }
+      }
+    }
   }
 ]
