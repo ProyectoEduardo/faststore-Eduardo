@@ -402,54 +402,5 @@
         }
       }
     }
-  },
-  {
-    "name": "CrossSelling",
-    "schema": {
-      "title": "Cross Selling",
-      "description": "Productos relacionados",
-      "type": "object",
-      "properties": {
-        "enabled": {
-          "title": "Mostrar sección",
-          "type": "boolean",
-          "default": true
-        },
-        "title": {
-          "title": "Título",
-          "type": "string",
-          "default": "Productos relacionados"
-        },
-        "products": {
-          "title": "Productos manuales",
-          "type": "array",
-          "items": {
-            "title": "Producto",
-            "type": "object",
-            "properties": {
-              "name": {
-                "title": "Nombre",
-                "type": "string"
-              },
-              "link": {
-                "title": "Link",
-                "type": "string"
-              },
-              "image": {
-                "title": "Imagen",
-                "type": "string",
-                "widget": {
-                  "ui:widget": "image-uploader"
-                }
-              },
-              "price": {
-                "title": "Precio",
-                "type": "number"
-              }
-            }
-          }
-        }
-      }
-    }
   }
 ]

@@ -8,6 +8,5 @@ import CategoryGrid from './CategoryGrid'
 import Newsletter from './Newsletter'
 import ProductDetail from './ProductDetail'
 import ProductTabs from './ProductTabs'
-import CrossSelling from './CrossSelling'
 
-export default { CallToAction, HelloWorld, CustomHeader, ProductShowcase, CustomSlider, CustomTicker, CategoryGrid, Newsletter, ProductDetail, ProductTabs, CrossSelling }
+export default { CallToAction, HelloWorld, CustomHeader, ProductShowcase, CustomSlider, CustomTicker, CategoryGrid, Newsletter, ProductDetail, ProductTabs }
