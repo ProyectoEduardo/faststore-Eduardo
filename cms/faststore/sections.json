@@ -387,6 +387,19 @@
         }
       }
     }
+  },
+  {
+  "name": "ProductTabs",
+  "schema": {
+    "title": "Product Tabs",
+    "type": "object",
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true
+      }
+    }
   }
+}
 
 ]
