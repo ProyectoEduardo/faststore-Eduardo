@@ -1,0 +1,58 @@
+.wrapper {
+    margin-top: 40px;
+    padding: 0 40px;
+}
+
+.tabs {
+    display: flex;
+    gap: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 12px 0;
+    cursor: pointer;
+    color: #666;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+
+.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.panel {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.specList {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 6px 0;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0 16px;
+    }
+
+    .tabs {
+        gap: 8px;
+    }
+
+    .tab {
+        font-size: 14px;
+    }
+}

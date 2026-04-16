@@ -367,5 +367,127 @@
         }
       }
     }
+  },
+  {
+    "name": "ProductDetail",
+    "schema": {
+      "title": "Product Detail",
+      "description": "Detalle del producto usando contexto PDP",
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Mostrar sección",
+          "type": "boolean",
+          "default": true
+        },
+        "buttonText": {
+          "title": "Texto botón",
+          "type": "string",
+          "default": "Comprar"
+        }
+      }
+    }
+  },
+  {
+    "name": "Breadcrumb",
+    "schema": {
+      "title": "Breadcrumb",
+      "description": "Ruta de navegación global",
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Mostrar breadcrumb",
+          "type": "boolean",
+          "default": true
+        },
+        "separator": {
+          "title": "Separador",
+          "type": "string",
+          "default": "/"
+        },
+        "items": {
+          "title": "Ruta manual",
+          "type": "array",
+          "items": {
+            "title": "Item",
+            "type": "object",
+            "properties": {
+              "label": {
+                "title": "Texto",
+                "type": "string"
+              },
+              "link": {
+                "title": "Link",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "ProductTabs",
+    "schema": {
+      "title": "Product Tabs",
+      "description": "Tabs de descripción y especificaciones",
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Mostrar sección",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  },
+  {
+    "name": "CrossSelling",
+    "schema": {
+      "title": "Cross Selling",
+      "description": "Productos relacionados",
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Mostrar sección",
+          "type": "boolean",
+          "default": true
+        },
+        "title": {
+          "title": "Título",
+          "type": "string",
+          "default": "Productos relacionados"
+        },
+        "products": {
+          "title": "Productos manuales",
+          "type": "array",
+          "items": {
+            "title": "Producto",
+            "type": "object",
+            "properties": {
+              "name": {
+                "title": "Nombre",
+                "type": "string"
+              },
+              "link": {
+                "title": "Link",
+                "type": "string"
+              },
+              "image": {
+                "title": "Imagen",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "price": {
+                "title": "Precio",
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
   }
 ]

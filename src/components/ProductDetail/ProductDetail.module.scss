@@ -1,0 +1,96 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mainImage {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.thumbs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.thumb {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 6px;
+}
+
+.active {
+    opacity: 1;
+    border: 2px solid #000;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.priceBlock {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.listPrice {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    button {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+}
+
+.buyButton {
+    height: 48px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+}
