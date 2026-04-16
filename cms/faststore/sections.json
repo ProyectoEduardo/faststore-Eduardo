@@ -387,20 +387,6 @@
         }
       }
     }
-  },
-  {
-    "name": "ProductTabs",
-    "schema": {
-      "title": "Product Tabs",
-      "description": "Tabs de descripción y especificaciones",
-      "type": "object",
-      "properties": {
-        "enabled": {
-          "title": "Mostrar sección",
-          "type": "boolean",
-          "default": true
-        }
-      }
-    }
   }
+
 ]
