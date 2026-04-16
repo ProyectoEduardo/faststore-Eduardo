@@ -28,7 +28,13 @@ export default function CustomHeader({
   links = [],
 }: CustomHeaderProps) {
   return (
-    <header style={{ borderBottom: '1px solid #ddd', background: '#fff' }}>
+    <header style={{
+      borderBottom: '1px solid #ddd',
+      background: '#fff',
+      position: 'sticky',
+      top: 0,
+      zIndex: 999,
+    }}>
       <div
         style={{
           display: 'grid',

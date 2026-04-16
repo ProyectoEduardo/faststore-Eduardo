@@ -232,5 +232,45 @@
         }
       }
     }
+  },
+  {
+    "name": "CustomTicker",
+    "schema": {
+      "title": "Cintillo Promocional",
+      "description": "Barra superior con texto configurable y animación",
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "title": "Activar barra",
+          "type": "boolean",
+          "default": true
+        },
+        "text": {
+          "title": "Texto",
+          "type": "string",
+          "default": "Envío gratis en compras mayores a S/199"
+        },
+        "backgroundColor": {
+          "title": "Color de fondo",
+          "type": "string",
+          "default": "#000000"
+        },
+        "textColor": {
+          "title": "Color de texto",
+          "type": "string",
+          "default": "#ffffff"
+        },
+        "animate": {
+          "title": "Activar movimiento",
+          "type": "boolean",
+          "default": true
+        },
+        "duration": {
+          "title": "Duración (segundos)",
+          "type": "number",
+          "default": 10
+        }
+      }
+    }
   }
 ]

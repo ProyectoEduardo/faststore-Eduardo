@@ -1,0 +1,28 @@
+.ticker {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 8px 0;
+}
+
+.content {
+    display: inline-flex;
+    gap: 80px;
+    white-space: nowrap;
+}
+
+.animate {
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
