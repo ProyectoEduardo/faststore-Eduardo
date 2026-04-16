@@ -3,8 +3,8 @@ import styles from './Newsletter.module.scss'
 
 export interface NewsletterProps {
     enabled?: boolean
-    title?: any
-    subtitle?: any
+    title?: string
+    subtitle?: string
     backgroundColor?: string
     backgroundImage?: string
     buttonText?: string
@@ -54,18 +54,10 @@ export default function Newsletter({
             }}
         >
             <div className={styles.content}>
-                {title && (
-                    <div
-                        className={styles.title}
-                        dangerouslySetInnerHTML={{ __html: title }}
-                    />
-                )}
+                {title && <h2 className={styles.title}>{title}</h2>}
 
                 {subtitle && (
-                    <div
-                        className={styles.subtitle}
-                        dangerouslySetInnerHTML={{ __html: subtitle }}
-                    />
+                    <p className={styles.subtitle}>{subtitle}</p>
                 )}
 
                 <form className={styles.form} onSubmit={handleSubmit}>
