@@ -6,7 +6,7 @@ import {
 import CustomProductInfo from "../CustomProductInfo/CustomProductInfo";
 import CustomImageGallery from "../CustomImageGallery/CustomImageGallery";
 
-const ProductDetailsCustom = getOverriddenSection({
+const ProductDetails = getOverriddenSection({
   Section: ProductDetailsSection,
   components: {
     ImageGallery: { Component: CustomImageGallery },
@@ -14,4 +14,4 @@ const ProductDetailsCustom = getOverriddenSection({
   },
 });
 
-export default ProductDetailsCustom;
+export default ProductDetails;
