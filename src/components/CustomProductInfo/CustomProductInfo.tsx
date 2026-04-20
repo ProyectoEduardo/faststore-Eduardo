@@ -29,7 +29,7 @@ export default function CustomProductInfo(props: any) {
       )}
       {showRef && (
         <div className={styles.ref}>
-          REF: {product.productID}
+         REF: {product.sku}
         </div>
       )}
       <div className={styles.price}>S/ {price}</div>
