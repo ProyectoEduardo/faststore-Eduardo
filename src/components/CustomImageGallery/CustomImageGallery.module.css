@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mainImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 8px;
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.active {
+  border: 2px solid black;
+}

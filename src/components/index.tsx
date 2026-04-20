@@ -6,9 +6,10 @@ import CustomSlider from './CustomSlider'
 import CustomTicker from './CustomTicker'
 import CategoryGrid from './CategoryGrid'
 import Newsletter from './Newsletter'
-import ProductDetail from './ProductDetail'
 import ProductTabs from './ProductTabs'
 import HeroBanner from './HeroBanner'
+
+import ProductDetailsCustom from './sections/ProductDetail'
 
 export default { 
     CallToAction, 
@@ -19,7 +20,9 @@ export default {
     CustomTicker, 
     CategoryGrid, 
     Newsletter, 
-    ProductDetail, 
     ProductTabs,
-    HeroBanner
- }
+    HeroBanner,
+
+
+    ProductDetails: ProductDetailsCustom
+}
