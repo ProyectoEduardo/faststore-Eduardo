@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { usePDP } from "@faststore/core";
-import styles from "./CustomGallery.module.css";
+import styles from "./CustomImageGallery.module.css";
 
 export default function CustomGallery() {
   const { data } = usePDP();
