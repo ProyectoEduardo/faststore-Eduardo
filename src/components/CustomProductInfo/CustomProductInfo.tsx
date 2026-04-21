@@ -1,22 +1,27 @@
 import React, { useState } from "react";
 import { usePDP } from "@faststore/core";
-import styles from "./CustomProductInfo.module.css";
+//import styles from "./CustomProductInfo.module.css";
 import { QuantitySelector } from "@faststore/ui";
-import "@faststore/ui/src/components/molecules/QuantitySelector/styles.scss";
+import { BuyButton } from '@faststore/ui'
+import { Rating } from "@faststore/ui";
+import { Icon } from '@faststore/ui'
+import styles from '../customRating.module.scss'
+
+
 
 export default function CustomProductInfo(props: any) {
   const { data } = usePDP();
   const product = data?.product;
 
-  const [quantity, setQuantity] = useState(1);
+  //const [quantity, setQuantity] = useState(1);
 
   if (!product) return null;
 
   const price = product.offers?.offers?.[0]?.price;
 
   const config = props?.productTitle ?? props ?? {};
-
-  const showRating = config.showRating;
+  const [rating, setRating] = useState(3)
+  //const showRating = config.showRating;
   const customSubtitle = config.customSubtitle;
   const showRef = config.refNumber;
 
@@ -27,10 +32,8 @@ export default function CustomProductInfo(props: any) {
       {customSubtitle && (
         <div className={styles.subtitle}>{customSubtitle}</div>
       )}
-
-      {showRating && (
-        <div className={styles.rating}>⭐⭐⭐⭐☆</div>
-      )}
+      
+    <Rating value={rating} onChange={setRating} icon={<Icon name="Star" />} />
 
       {showRef && (
         <div className={styles.ref}>
@@ -41,18 +44,8 @@ export default function CustomProductInfo(props: any) {
       <div className={styles.price}>S/ {price}</div>
 
       <div className={styles.buyRow}>
-        <div className={styles.container}>
-          <QuantitySelector
-            min={1}
-            max={10}
-            initial={1}
-            onChange={(value) => setQuantity(value)}
-          />
-        </div>
-
-        <div className={styles.buyButton}>
-          {props.children}
-        </div>
+        <QuantitySelector min={1} max={10} initial={5} />
+        <BuyButton>Buy Now</BuyButton>
       </div>
     </div>
   );

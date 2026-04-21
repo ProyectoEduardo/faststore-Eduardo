@@ -8,8 +8,7 @@ import CategoryGrid from './CategoryGrid'
 import Newsletter from './Newsletter'
 import ProductTabs from './ProductTabs'
 import HeroBanner from './HeroBanner'
-
-import ProductDetailsCustom from './sections/ProductDetail'
+import ProductDetails from './sections/ProductDetail'
 
 export default { 
     CallToAction, 
@@ -23,6 +22,5 @@ export default {
     ProductTabs,
     HeroBanner,
 
-
-    ProductDetails: ProductDetailsCustom
+    ProductDetails: ProductDetails
 }
