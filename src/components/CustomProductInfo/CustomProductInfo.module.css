@@ -42,3 +42,17 @@
 .active {
   border: 2px solid black;
 }
+.buyRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.buyButton {
+  flex: 1;
+}
+
+[data-fs-quantity-selector] {
+  min-width: 120px;
+}

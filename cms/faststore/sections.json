@@ -476,20 +476,6 @@
               "title": "Mostrar rating",
               "type": "boolean",
               "default": true
-            },
-
-           
-            "customSubtitle": {
-              "title": "Subtítulo debajo del nombre",
-              "type": "string",
-              "default": ""
-            },
-
-           
-            "extraText": {
-              "title": "Texto adicional",
-              "type": "string",
-              "default": ""
             }
           }
         },
@@ -533,38 +519,7 @@
             }
           }
         },
-        "shippingSimulator": {
-          "title": "Shipping Simulation",
-          "type": "object",
-          "properties": {
-            "title": {
-              "title": "Title",
-              "type": "string",
-              "default": "Shipping"
-            },
-            "inputLabel": {
-              "title": "Input Label",
-              "type": "string",
-              "default": "Postal Code"
-            },
-            "link": {
-              "title": "Postal Code Discovery",
-              "type": "object",
-              "properties": {
-                "text": {
-                  "title": "Link Text",
-                  "type": "string",
-                  "default": "I don't know my Postal Code"
-                },
-                "to": { "title": "URL", "type": "string" }
-              }
-            },
-            "shippingOptionsTableTitle": {
-              "title": "Shipping Options Table Header",
-              "type": "string"
-            }
-          }
-        },
+
         "productDescription": {
           "title": "Product Description",
           "type": "object",

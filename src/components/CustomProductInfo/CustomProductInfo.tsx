@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { usePDP } from "@faststore/core";
 import styles from "./CustomProductInfo.module.css";
+import { QuantitySelector } from "@faststore/ui";
+import "@faststore/ui/src/components/molecules/QuantitySelector/styles.scss";
+const [quantity, setQuantity] = useState(1);
 
 export default function CustomProductInfo(props: any) {
   const { data } = usePDP();
@@ -33,7 +36,21 @@ export default function CustomProductInfo(props: any) {
         </div>
       )}
       <div className={styles.price}>S/ {price}</div>
-      {props.children}
+      <div className={styles.buyRow}>
+  
+    
+    <QuantitySelector
+        min={1}
+        max={10}
+        initial={1}
+        onChange={(value) => setQuantity(value)}
+    />
+   
+    <div className={styles.buyButton}>
+        {props.children}
+    </div>
+
+    </div>
     </div>
   );
 }
