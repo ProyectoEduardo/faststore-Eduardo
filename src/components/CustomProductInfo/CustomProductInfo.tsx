@@ -38,14 +38,14 @@ export default function CustomProductInfo(props: any) {
       <div className={styles.price}>S/ {price}</div>
       <div className={styles.buyRow}>
   
-    
+   <div className={styles.container}>
     <QuantitySelector
         min={1}
         max={10}
         initial={1}
         onChange={(value) => setQuantity(value)}
     />
-   
+   </div>
     <div className={styles.buyButton}>
         {props.children}
     </div>

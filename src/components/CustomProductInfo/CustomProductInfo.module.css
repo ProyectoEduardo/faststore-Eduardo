@@ -53,6 +53,6 @@
   flex: 1;
 }
 
-[data-fs-quantity-selector] {
+.container [data-fs-quantity-selector] {
   min-width: 120px;
 }
