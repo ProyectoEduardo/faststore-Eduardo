@@ -396,4 +396,22 @@
   }
 
   .section-banner + .section-newsletter { background-color: var(--fs-color-neutral-bkg); }
+
+  [data-fs-product-details-values-wrapper="true"],
+  [data-fs-shipping-simulation="true"],
+  [data-fs-product-details-selectors="true"]{
+    display: none !important;
+  }
+
+  [data-fs-product-details-settings="true"] {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  [data-fs-product-details-settings="true"] [data-fs-button="true"] {
+  margin:0;
+    margin-left:5px;
+  }
 }

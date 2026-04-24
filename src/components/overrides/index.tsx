@@ -1,0 +1,12 @@
+export { default as Breadcrumb } from './pdp/Breadcrumb'
+export { default as ProductGallery } from './pdp/ProductGallery'
+export { default as ProductInfo } from './pdp/ProductInfo'
+export { default as ShippingCalculator } from './pdp/ShippingCalculator'
+export { default as ProductTabs } from './pdp/ProductTabs'
+export { default as PDPWrapper } from './pdp/PDPWrapper'
+export { default as PDPLayout } from './pdp/PDPLayout'
+// PLP 
+export { default as ProductCard } from './plp/ProductCard'
+export { default as ProductGrid } from './plp/ProductGrid'
+export { default as PLPBreadcrumb } from './plp/PLPBreadcrumb'
+export { default as PLPLayout } from './plp/PLPLayout'

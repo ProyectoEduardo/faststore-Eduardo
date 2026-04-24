@@ -10,7 +10,7 @@ import { CustomBuyButton } from "../CustomBuyButton/CustomBuyButton";
 const ProductDetails = getOverriddenSection({
   Section: ProductDetailsSection,
   components: {
-   // ImageGallery: { Component: CustomImageGallery },
+    // ImageGallery: { Component: CustomImageGallery },
     ProductTitle: { Component: CustomProductInfo }, 
     //BuyButton: { Component: CustomBuyButton },
   },

@@ -119,12 +119,12 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className={styles.seccionBtn}>
+      {/* COLORES <div className={styles.seccionBtn}>
         <QuantitySelector min={1} max={10} initial={1} />
       <div className={styles.compBtn}><BuyButton>Comprar</BuyButton></div>
         
         
-      </div>
+      </div>*/}
     </div>
   );
 }
