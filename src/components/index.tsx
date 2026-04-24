@@ -9,7 +9,6 @@ import Newsletter from './Newsletter'
 import ProductTabs from './ProductTabs'
 import HeroBanner from './HeroBanner'
 import ProductDetails from './sections/ProductDetail'
-import ProductGallery from './sections/ProductGallery'
 
 export default { 
     CallToAction, 
@@ -23,6 +22,5 @@ export default {
     ProductTabs,
     HeroBanner,
 
-    ProductDetails: ProductDetails,
-    ProductGallery:ProductGallery
+    ProductDetails: ProductDetails
 }
