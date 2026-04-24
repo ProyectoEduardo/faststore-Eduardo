@@ -12,7 +12,7 @@ const ProductDetails = getOverriddenSection({
   components: {
    // ImageGallery: { Component: CustomImageGallery },
     ProductTitle: { Component: CustomProductInfo }, 
-    BuyButton: { Component: CustomBuyButton },
+    //BuyButton: { Component: CustomBuyButton },
   },
 });
 

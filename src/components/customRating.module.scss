@@ -1,4 +1,129 @@
 .customProductTitle {
   @import "@faststore/ui/src/components/molecules/Rating/styles.scss";
   @import "@faststore/ui/src/components/molecules/QuantitySelector/styles.scss";
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.rating {
+  color: #f5a623;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.variants {
+  margin-top: 10px;
+}
+
+.sizes {
+  display: flex;
+  gap: 8px;
+}
+
+.sizeBtn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.sizeBtn:hover {
+  border-color: black;
+}
+
+.active {
+  border: 2px solid black;
+}
+.buyRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.buyButton {
+  flex: 1;
+}
+
+.seccionBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Esto es CLAVE en FastStore */
+.seccionBtn :global(button) {
+  width: auto !important;
+}
+
+.compBtn {
+  display: flex;
+}
+.seccionBtn :global(button) {
+  width: auto !important;
+  margin: 0 !important;
+}
+.customRating_compBtn__rdw9U button {
+    width: 239px !important;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.sizes {
+  display: flex;
+  gap: 8px;
+}
+
+.sizeBtn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sizeBtn:hover {
+  border-color: black;
+}
+
+.active {
+  border: 2px solid black;
+}
+
+/* COLORES */
+.colors {
+  display: flex;
+  gap: 8px;
+}
+
+.colorSwatch {
+  width: 39px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.colorSwatch img {
+  width: 33px;
+  height: 33px;
+  object-fit: cover;
 }
