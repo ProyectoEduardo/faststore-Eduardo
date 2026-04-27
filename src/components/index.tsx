@@ -43,7 +43,7 @@ export default {
     PDPLayout,
     ProductCard,
     ProductGrid,
-    PLPBreadcrumb,
+    //PLPBreadcrumb,
     PLPLayout,
     Filters: () => null, 
 }

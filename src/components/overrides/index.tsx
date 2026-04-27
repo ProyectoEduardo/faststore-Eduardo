@@ -8,5 +8,5 @@ export { default as PDPLayout } from './pdp/PDPLayout'
 // PLP 
 export { default as ProductCard } from './plp/ProductCard'
 export { default as ProductGrid } from './plp/ProductGrid'
-export { default as PLPBreadcrumb } from './plp/PLPBreadcrumb'
+//export { default as PLPBreadcrumb } from './plp/PLPBreadcrumb'
 export { default as PLPLayout } from './plp/PLPLayout'
