@@ -9,7 +9,7 @@ import CategoryGrid from './CategoryGrid'
 import Newsletter from './Newsletter'
 import HeroBanner from './HeroBanner'
 import ProductDetails from './sections/ProductDetail'
-import CustonFooter from "./Footer/Footer"
+import CustomFooter from "./CustomFooter/CustomFooter"
 
 export default { 
     CallToAction, 
@@ -22,6 +22,6 @@ export default {
     CategoryGrid, 
     Newsletter, 
     HeroBanner,
-    CustonFooter,
+    CustomFooter,
     ProductDetails: ProductDetails,
 }

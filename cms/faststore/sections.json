@@ -553,42 +553,28 @@
   }
 },
 {
- "name": "CustomFooter",
+  "name": "CustomFooter",
   "schema": {
-    "title": "Footer Custom",
+    "title": "Custom Footer",
     "type": "object",
     "properties": {
       "benefits": {
-        "title": "Beneficios",
         "type": "array",
-        "items": {
-          "type": "string"
-        }
+        "items": { "type": "string" }
       },
       "columns": {
-        "title": "Columnas",
         "type": "array",
         "items": {
           "type": "object",
           "properties": {
-            "title": {
-              "title": "Título",
-              "type": "string"
-            },
+            "title": { "type": "string" },
             "links": {
-              "title": "Links",
               "type": "array",
               "items": {
                 "type": "object",
                 "properties": {
-                  "label": {
-                    "title": "Texto",
-                    "type": "string"
-                  },
-                  "href": {
-                    "title": "URL",
-                    "type": "string"
-                  }
+                  "label": { "type": "string" },
+                  "href": { "type": "string" }
                 }
               }
             }
@@ -596,22 +582,12 @@
         }
       },
       "socials": {
-        "title": "Redes sociales",
         "type": "array",
         "items": {
           "type": "object",
           "properties": {
-            "icon": {
-              "title": "Icono",
-              "type": "string",
-              "widget": {
-                "ui:widget": "image-uploader"
-              }
-            },
-            "href": {
-              "title": "Link",
-              "type": "string"
-            }
+            "icon": { "type": "string" },
+            "href": { "type": "string" }
           }
         }
       }
