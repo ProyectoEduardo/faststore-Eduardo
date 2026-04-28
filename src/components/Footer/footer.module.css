@@ -1,26 +1,45 @@
 .footer {
-  background: #111;
-  color: #fff;
-  padding: 40px 20px;
+  background: #f5f5f5;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
 }
 
+/* BENEFICIOS */
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* LINEA */
+.divider {
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* CONTENIDO */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.logoContainer {
-  margin-bottom: 30px;
-}
-
-.logo {
-  max-width: 150px;
-}
-
 .columns {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .column ul {
@@ -28,25 +47,27 @@
   padding: 0;
 }
 
+.column li {
+  margin-bottom: 8px;
+}
+
 .column a {
-  color: #ccc;
   text-decoration: none;
+  color: #333;
   font-size: 14px;
 }
 
 .column a:hover {
-  color: #fff;
+  text-decoration: underline;
 }
 
-.title {
-  margin-bottom: 10px;
-  font-weight: bold;
+/* REDES */
+.socials {
+  display: flex;
+  gap: 10px;
 }
 
-.bottom {
-  margin-top: 30px;
-  border-top: 1px solid #333;
-  padding-top: 20px;
-  font-size: 12px;
-  text-align: center;
+.socials img {
+  width: 24px;
+  height: 24px;
 }

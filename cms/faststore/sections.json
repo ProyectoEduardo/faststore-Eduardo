@@ -553,17 +553,16 @@
   }
 },
 {
-  "name": "CustonFooter",
+ "name": "CustomFooter",
   "schema": {
     "title": "Footer Custom",
-    "description": "Footer editable",
     "type": "object",
     "properties": {
-      "logo": {
-        "title": "Logo",
-        "type": "string",
-        "widget": {
-          "ui:widget": "image-uploader"
+      "benefits": {
+        "title": "Beneficios",
+        "type": "array",
+        "items": {
+          "type": "string"
         }
       },
       "columns": {
@@ -596,9 +595,25 @@
           }
         }
       },
-      "copyright": {
-        "title": "Copyright",
-        "type": "string"
+      "socials": {
+        "title": "Redes sociales",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "icon": {
+              "title": "Icono",
+              "type": "string",
+              "widget": {
+                "ui:widget": "image-uploader"
+              }
+            },
+            "href": {
+              "title": "Link",
+              "type": "string"
+            }
+          }
+        }
       }
     }
   }

@@ -1,79 +1,91 @@
 import React from "react"
 import styles from "./footer.module.css"
 
-type LinkItem = {
+type Link = {
   label: string
   href: string
 }
 
 type Column = {
   title: string
-  links: LinkItem[]
+  links: Link[]
+}
+
+type Social = {
+  icon: string
+  href: string
 }
 
 type FooterProps = {
-  logo?: string
+  benefits?: string[]
   columns?: Column[]
-  copyright?: string
+  socials?: Social[]
 }
 
-function Footer({
-  logo,
+export default function CustomFooter({
+  benefits = [],
   columns = [],
-  copyright,
+  socials = [],
 }: FooterProps) {
   return (
     <footer className={styles.footer}>
-      <div className={styles.container}>
-        
-        {/* Logo */}
-        {logo && (
-          <div className={styles.logoContainer}>
-            <img src={logo} alt="logo" className={styles.logo} />
+      
+      {/* BENEFICIOS */}
+      <div className={styles.benefits}>
+        {benefits.map((item, i) => (
+          <div key={i} className={styles.benefitItem}>
+            <span>{item}</span>
           </div>
-        )}
+        ))}
+      </div>
 
-        {/* Columnas */}
+      {/* LINEA */}
+      <div className={styles.divider} />
+
+      {/* CONTENIDO */}
+      <div className={styles.container}>
         <div className={styles.columns}>
-          {columns.map((col, index) => (
-            <div key={index} className={styles.column}>
-              <h4 className={styles.title}>{col.title}</h4>
+          {columns.map((col, i) => (
+            <div key={i} className={styles.column}>
+              <h4>{col.title}</h4>
               <ul>
-                {col.links.map((link, i) => (
-                  <li key={i}>
+                {col.links.map((link, j) => (
+                  <li key={j}>
                     <a href={link.href}>{link.label}</a>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-        </div>
 
-        {/* Copyright */}
-        {copyright && (
-          <div className={styles.bottom}>
-            <p>{copyright}</p>
+          {/* REDES */}
+          <div className={styles.column}>
+            <h4>Follow Us</h4>
+            <div className={styles.socials}>
+              {socials.map((s, i) => (
+                <a key={i} href={s.href}>
+                  <img src={s.icon} alt="social" />
+                </a>
+              ))}
+            </div>
           </div>
-        )}
 
+        </div>
       </div>
     </footer>
   )
 }
 
-export default Footer
-
-// 👇 IMPORTANTE (CMS schema)
+// SCHEMA
 export const schema = {
-  title: "Footer Custom",
-  description: "Footer editable desde CMS",
+  title: "Footer Pro",
   type: "object",
   properties: {
-    logo: {
-      title: "Logo",
-      type: "string",
-      widget: {
-        "ui:widget": "image-uploader"
+    benefits: {
+      title: "Beneficios (arriba)",
+      type: "array",
+      items: {
+        type: "string"
       }
     },
     columns: {
@@ -82,33 +94,30 @@ export const schema = {
       items: {
         type: "object",
         properties: {
-          title: {
-            title: "Título",
-            type: "string"
-          },
+          title: { type: "string" },
           links: {
-            title: "Links",
             type: "array",
             items: {
               type: "object",
               properties: {
-                label: {
-                  title: "Texto",
-                  type: "string"
-                },
-                href: {
-                  title: "URL",
-                  type: "string"
-                }
+                label: { type: "string" },
+                href: { type: "string" }
               }
             }
           }
         }
       }
     },
-    copyright: {
-      title: "Copyright",
-      type: "string"
+    socials: {
+      title: "Redes",
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          icon: { type: "string" },
+          href: { type: "string" }
+        }
+      }
     }
   }
 }
