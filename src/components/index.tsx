@@ -34,7 +34,7 @@ export default {
     HeroBanner,
 
     ProductDetails: ProductDetails,
-    Breadcrumb,
+    //Breadcrumb,
     ProductGallery: ProductGalleryPlp,  
     ProductInfo,
     ProductTabs,

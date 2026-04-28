@@ -1,5 +1,5 @@
 export { default as ProductCard } from './ProductCard'
 export { default as ProductGrid } from './ProductGrid'
-export { default as PLPBreadcrumb } from './PLPBreadcrumb'
+//export { default as PLPBreadcrumb } from './PLPBreadcrumb'
 export { default as PLPLayout } from './PLPLayout'
 export { default as ProductGalleryCustom } from './ProductGalleryPlp'

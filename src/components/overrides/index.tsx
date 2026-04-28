@@ -1,4 +1,4 @@
-export { default as Breadcrumb } from './pdp/Breadcrumb'
+//export { default as Breadcrumb } from './pdp/Breadcrumb'
 export { default as ProductGallery } from './pdp/ProductGallery'
 export { default as ProductInfo } from './pdp/ProductInfo'
 export { default as ShippingCalculator } from './pdp/ShippingCalculator'
