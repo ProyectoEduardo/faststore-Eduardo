@@ -37,13 +37,13 @@ export default {
     Breadcrumb,
     ProductGallery: ProductGalleryPlp,  
     ProductInfo,
-    ShippingCalculator,
     ProductTabs,
+    /*ShippingCalculator,
     PDPWrapper,
     PDPLayout,
     ProductCard,
     ProductGrid,
     //PLPBreadcrumb,
     PLPLayout,
-    Filters: () => null, 
+    Filters: () => null, */
 }
