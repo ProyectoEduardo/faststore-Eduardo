@@ -1,0 +1,52 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  margin-bottom: 30px;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.column a:hover {
+  color: #fff;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bottom {
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 12px;
+  text-align: center;
+}
