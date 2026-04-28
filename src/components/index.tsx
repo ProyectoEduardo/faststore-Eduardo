@@ -1,5 +1,6 @@
 import CallToAction from './CallToAction'
 import HelloWorld from './HelloWorld'
+import ProductTabs from './ProductTabs'
 import CustomHeader from './CustomHeader'
 import ProductShowcase from './ProductShowcase'
 import CustomSlider from './CustomSlider'
@@ -11,7 +12,8 @@ import ProductDetails from './sections/ProductDetail'
 
 export default { 
     CallToAction, 
-    HelloWorld, 
+    HelloWorld,
+    ProductTabs,
     CustomHeader, 
     ProductShowcase, 
     CustomSlider, 
