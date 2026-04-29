@@ -558,23 +558,32 @@
     "title": "Custom Footer",
     "type": "object",
     "properties": {
-      "benefits": {
-        "type": "array",
-        "items": { "type": "string" }
-      },
       "columns": {
+        "title": "Columnas de navegación",
         "type": "array",
         "items": {
+          "title": "Columna",
           "type": "object",
           "properties": {
-            "title": { "type": "string" },
+            "title": {
+              "title": "Título de la columna",
+              "type": "string"
+            },
             "links": {
+              "title": "Links",
               "type": "array",
               "items": {
+                "title": "Link",
                 "type": "object",
                 "properties": {
-                  "label": { "type": "string" },
-                  "href": { "type": "string" }
+                  "label": {
+                    "title": "Texto del link",
+                    "type": "string"
+                  },
+                  "href": {
+                    "title": "URL",
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -582,14 +591,72 @@
         }
       },
       "socials": {
+        "title": "Redes sociales",
         "type": "array",
         "items": {
+          "title": "Red social",
           "type": "object",
           "properties": {
-            "icon": { "type": "string" },
-            "href": { "type": "string" }
+            "label": {
+              "title": "Nombre (ej: Instagram)",
+              "type": "string"
+            },
+            "href": {
+              "title": "URL de la red social",
+              "type": "string"
+            },
+            "icon": {
+              "title": "Ícono (URL de imagen SVG o PNG)",
+              "type": "string",
+              "widget": {
+                "ui:widget": "image-uploader"
+              }
+            }
           }
         }
+      },
+      "logo": {
+        "title": "Logo (URL de imagen)",
+        "type": "string",
+        "widget": {
+          "ui:widget": "image-uploader"
+        }
+      },
+      "logoAlt": {
+        "title": "Nombre de la tienda (texto si no hay logo)",
+        "type": "string"
+      },
+      "legalText": {
+        "title": "Texto legal",
+        "type": "string",
+        "widget": {
+          "ui:widget": "textarea"
+        }
+      },
+      "paymentMethods": {
+        "title": "Métodos de pago",
+        "type": "array",
+        "items": {
+          "title": "Método de pago",
+          "type": "object",
+          "properties": {
+            "label": {
+              "title": "Nombre (ej: Visa)",
+              "type": "string"
+            },
+            "icon": {
+              "title": "Ícono (URL de imagen)",
+              "type": "string",
+              "widget": {
+                "ui:widget": "image-uploader"
+              }
+            }
+          }
+        }
+      },
+      "copyrightText": {
+        "title": "Texto de copyright",
+        "type": "string"
       }
     }
   }

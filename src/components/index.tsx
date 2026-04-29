@@ -9,7 +9,7 @@ import CategoryGrid from './CategoryGrid'
 import Newsletter from './Newsletter'
 import HeroBanner from './HeroBanner'
 import ProductDetails from './sections/ProductDetail'
-import CustomFooter from "./CustomFooter/CustomFooter"
+import CustomFooter from "./CustomFooter"
 
 export default { 
     CallToAction, 
